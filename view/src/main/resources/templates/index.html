@@ -163,7 +163,7 @@
 
         function loadGoogleMapsAPI() {
             const script = document.createElement('script');
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${config.apikey}&callback=initialize&libraries=places&v=weekly`;
+            script.src = '/proxy/maps-api?callback=initialize&libraries=places&v=weekly';
             script.defer = true;
             document.head.appendChild(script);
         }
@@ -174,7 +174,7 @@
     <button id="search-button">검색</button>
     <div id="map"></div>
     <div id="pano"></div>
-    <script src="/js/config/apikey.js"></script>
+    <!-- <script src="/js/config/apikey.js"></script>  -->
     <script>
         document.addEventListener('DOMContentLoaded', loadGoogleMapsAPI);
     </script>

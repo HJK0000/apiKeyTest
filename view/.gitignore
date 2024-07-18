@@ -5,9 +5,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-# .gitignore 파일 내용
-/view/bin/main/static/js/config/apikey.js
-
 ### STS ###
 .apt_generated
 .classpath
